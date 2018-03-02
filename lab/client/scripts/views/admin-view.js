@@ -14,6 +14,7 @@ var app = app || {};
       let token = event.target.passphrase.value;
 
       // COMMENT: Is the token cleared out of local storage? Do you agree or disagree with this structure?
+      //This does not clear the token out. Don't see any place the token is cleatred, so anyone that uses this app on thius device will have admin privileg]dges.  Not good.  
       $.get(`${__API_URL__}/api/v1/admin`, {token})
         .then(res => {
           localStorage.token = true;

@@ -62,7 +62,8 @@
         <li><a href="/">home</a></li>
         <li class="admin"><a href="/books/new">add book</a></li>
         <li class="admin"><a href="/books/search">search g-books</a></li>
-        <!-- COMMENT: This will allow users to log in as an admin using a passphrase, but there is no way to log out. How would you enhance this application to allow a user to log out? -->
+        <!-- COMMENT: This will allow users to log in as an admin using a passphrase, but there is no way to log out. How would you enhance this application to allow a user to log out? 
+        You could add another li with an anchor tag and the same href but the text would be logout and allow the user to logout. Or change the anchor tag text to logout when the user is logged in and when they click on the logout the route would go the the admin-view.js to handle the logout.  Either way, you would have to add code to the admin-view.js to check the loggged in status and to handle the login/logout function.-->
         <li><a href="/admin">login</a></li>
       </ul>
     </nav>
